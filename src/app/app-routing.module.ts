@@ -10,6 +10,9 @@ import { StudentsComponent } from './characters/students/students/students.compo
 
 const routes: Routes = [
   {
+    path: '', redirectTo: '/house', pathMatch: 'full'
+  },
+  {
     path:'staffs', component: StaffsComponent
   },
   {

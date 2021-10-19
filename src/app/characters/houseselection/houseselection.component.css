@@ -1,0 +1,22 @@
+.title{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: greenyellow;
+    color: black;
+    font-size: 41px;
+}
+
+.img{
+    padding: 50px;
+    margin-left: 380px;
+    margin-right: 380px;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.dropdown{
+    margin-left: 500px;
+}
