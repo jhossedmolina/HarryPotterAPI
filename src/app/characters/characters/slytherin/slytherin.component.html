@@ -1,1 +1,22 @@
-<p>slytherin works!</p>
+<h1 class="title">SLYTHERIN CHARACTERS</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-success">
+      <th scope="col">NAME</th>
+      <th scope="col">PATRONUS</th>
+      <th scope="col">AGE</th>
+      <th scope="col">IMAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info" *ngFor="let ravenclaw of arrRavenclaw">
+      <td>{{ ravenclaw.name }}</td>
+      <td>{{ ravenclaw.patronus }}</td>
+      <td>{{ ravenclaw.age }}</td>
+      <td>
+        <img src="{{ ravenclaw.image }}" alt="" class="img" />
+      </td>
+    </tr>
+  </tbody>
+</table>
