@@ -1,1 +1,22 @@
-<p>staffs works!</p>
+<h1 class="title">STAFFS LIST</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-success">
+      <th scope="col">NAME</th>
+      <th scope="col">PATRONUS</th>
+      <th scope="col">AGE</th>
+      <th scope="col">IMAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info" *ngFor="let staffs of arrStaffs">
+      <td>{{ staffs.name }}</td>
+      <td>{{ staffs.patronus }}</td>
+      <td>{{ staffs.age }}</td>
+      <td>
+        <img src="{{ staffs.image }}" alt="" class="img" />
+      </td>
+    </tr>
+  </tbody>
+</table>

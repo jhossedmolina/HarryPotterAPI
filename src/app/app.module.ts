@@ -12,12 +12,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { StaffsComponent } from './characters/staffs/staffs.component';
-import { StudentsComponent } from './characters/students/students.component';
+import { StudentsComponent } from './characters/students/students/students.component';
 import { NewstudentsComponent } from './characters/students/newstudents/newstudents.component';
 import { GryffindorComponent } from './characters/characters/gryffindor/gryffindor.component';
 import { RavenclawComponent } from './characters/characters/ravenclaw/ravenclaw.component';
 import { SlytherinComponent } from './characters/characters/slytherin/slytherin.component';
 import { HufflepuffComponent } from './characters/characters/hufflepuff/hufflepuff.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { HufflepuffComponent } from './characters/characters/hufflepuff/hufflepu
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

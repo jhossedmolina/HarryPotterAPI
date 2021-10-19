@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HarrypotterService } from 'src/app/services/harrypotter.service';
 
 @Component({
   selector: 'app-staffs',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StaffsComponent implements OnInit {
 
-  constructor() { }
+  arrStaffs: any[] | undefined;
+
+  constructor(private staffsService: HarrypotterService) { }
 
   ngOnInit(): void {
+    this.staffsService.getAllStaffs()
+    .then(staffs => this.arrStaffs = staffs)
+    .catch(error => console.log(error));
   }
 
 }
