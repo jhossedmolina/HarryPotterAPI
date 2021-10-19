@@ -1,1 +1,22 @@
-<p>newstudents works!</p>
+<h1 class="title">STUDENT APPLICATION</h1>
+
+<div class="container">
+    <form [formGroup]="formStudent" (ngSubmit)="onSubmit()">
+        Name: <input 
+        type="text"
+        class="form-control" 
+        formControlName="nameStudent"> 
+        Last Name: <input 
+        type="text"
+        class="form-control"
+        formControlName="lastNameStudent">
+        Age: <input 
+        type="number" 
+        class="form-control"
+        formControlName="ageStudent"><br/>
+        <button class="btn btn-primary" type="submit" [disabled]="!formStudent.valid">Send</button >
+    </form>
+</div>
+
+
+

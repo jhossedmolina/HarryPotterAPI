@@ -20,6 +20,7 @@ import { SlytherinComponent } from './characters/characters/slytherin/slytherin.
 import { HufflepuffComponent } from './characters/characters/hufflepuff/hufflepuff.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HouseselectionComponent } from './characters/houseselection/houseselection.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,8 @@ import { HouseselectionComponent } from './characters/houseselection/houseselect
     MatIconModule,
     MatListModule,
     HttpClientModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

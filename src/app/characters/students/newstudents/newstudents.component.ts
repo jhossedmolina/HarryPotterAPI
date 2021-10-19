@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-newstudents',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewstudentsComponent implements OnInit {
 
-  constructor() { }
+
+  hola: string | undefined;
+
+  formStudent = new FormGroup({
+    nameStudent: new FormControl('', Validators.required),
+    lastNameStudent: new FormControl('', Validators.required),
+    ageStudent: new FormControl('', Validators.required)
+  })
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
+
+  onSubmit(){
+      localStorage.setItem('newStudents',JSON.stringify(this.formStudent.value))
+  }
+
+  
+
+  
+  
+  
+
 
 }

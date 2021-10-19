@@ -6,6 +6,7 @@ import { RavenclawComponent } from './characters/characters/ravenclaw/ravenclaw.
 import { SlytherinComponent } from './characters/characters/slytherin/slytherin.component';
 import { HouseselectionComponent } from './characters/houseselection/houseselection.component';
 import { StaffsComponent } from './characters/staffs/staffs.component';
+import { NewstudentsComponent } from './characters/students/newstudents/newstudents.component';
 import { StudentsComponent } from './characters/students/students/students.component';
 
 const routes: Routes = [
@@ -32,6 +33,9 @@ const routes: Routes = [
   },
   {
     path:'hufflepuff', component: HufflepuffComponent
+  },
+  {
+    path:'newStudents', component: NewstudentsComponent
   }
 ];
 

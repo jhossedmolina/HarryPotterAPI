@@ -7,6 +7,14 @@
     font-size: 41px;
 }
 
+.buttonAdd{
+    margin-left: 500px;
+}
+
+.table{
+    margin-top: 15px;
+}
+
 .img{
     height: auto;
     width: auto;
