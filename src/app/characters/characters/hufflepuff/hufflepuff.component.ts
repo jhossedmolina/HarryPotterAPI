@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HufflepuffComponent implements OnInit {
 
+  arrHufflepuff: any[] | undefined;
+
   constructor() { }
 
   ngOnInit(): void {

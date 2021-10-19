@@ -19,6 +19,7 @@ import { RavenclawComponent } from './characters/characters/ravenclaw/ravenclaw.
 import { SlytherinComponent } from './characters/characters/slytherin/slytherin.component';
 import { HufflepuffComponent } from './characters/characters/hufflepuff/hufflepuff.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HouseselectionComponent } from './characters/houseselection/houseselection.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     GryffindorComponent,
     RavenclawComponent,
     SlytherinComponent,
-    HufflepuffComponent
+    HufflepuffComponent,
+    HouseselectionComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

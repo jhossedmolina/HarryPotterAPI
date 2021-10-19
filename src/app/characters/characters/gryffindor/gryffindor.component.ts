@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HarrypotterService } from 'src/app/services/harrypotter.service';
 
 @Component({
   selector: 'app-gryffindor',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GryffindorComponent implements OnInit {
 
-  constructor() { }
+  arrGryffindor: any[] | undefined;
+
+  constructor(private gryffindorService: HarrypotterService) { }
 
   ngOnInit(): void {
+    this.gryffindorService.getGryffindorHouse()
+    .then(gryffindor => this.arrGryffindor = gryffindor)
+    .catch(error => console.log(error));
   }
 
 }
