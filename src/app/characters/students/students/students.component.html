@@ -1,1 +1,22 @@
-<p>students works!</p>
+<h1 class="title">STUDENTS SECTION</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-success">
+      <th scope="col">NAME</th>
+      <th scope="col">PATRONUS</th>
+      <th scope="col">AGE</th>
+      <th scope="col">IMAGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info" *ngFor="let students of arrStudents">
+      <td>{{ students.name }}</td>
+      <td>{{ students.patronus }}</td>
+      <td>{{ students.age }}</td>
+      <td>
+        <img src="{{ students.image }}" alt="" class="img" />
+      </td>
+    </tr>
+  </tbody>
+</table>
